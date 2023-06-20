@@ -1,0 +1,44 @@
+group-commands:
+  help:
+    message:
+      - '&e&l                        Group Hilfe'
+      - '&e-----------------------------------------------------'
+      - '&e/group help: &fZeigt diese Nachricht'
+      - '&e/group show: &fZeigt die Gruppe in der du dich zur Zeit befindest'
+      - '&e/group create <name> <prefix> <weight> [description]: &fErstellt eine neue Gruppe'
+      - '&e/group add <playername> <groupname>: &fFügt einen Spieler zu einer Gruppe hinzu'
+      - '&e/group remove <playername> <groupname>: &f Entfernt einen Spieler vone einer Gruppe'
+      - '&e/group sign <add/remove>: &f Zeigt den Spielernamen auf dem Schild der Spielerposition an'
+  create:
+    message-success: '&2Gruppe [groupname] erfolgreich erstellt!'
+    message-fail-general: "&4Etwas ist schiefgelaufen beim erstellen der Gruppe!"
+  add:
+    message-success: '&2Erfolgreich [playername] zur Gruppe [groupname] hinzugefügt!'
+    message-unknown-player: "&4Konnte Spieler mit dem Namen [playername] nicht finden!"
+    message-unknown-group: "&4Konnte Gruppe mit dem Namen [groupname] nicht finden!"
+    message-wrong-format: "&4Der Zeitstempel für joinuntil ist nicht valide!"
+  remove:
+    message-success: '&2Erfolgreich [playername] von der Gruppe [groupname] entfernt!'
+    message-unknown-player: "&4Konnte Spieler mit dem Namen [playername] nicht finden!"
+    message-unknown-group: "&4Konnte Gruppe mit dem Namen [groupname] nicht finden!"
+  show:
+    message: "&eDu befindest dich zurzeit in folgenden Gruppen: [groupname], mit der Beschreibung: [description]"
+    message-no-group: "&4Du befindest dich in keiner Gruppe!"
+  delete:
+    message: "&2Erfolgreich die Gruppe [groupname] gelöscht"
+    message-player-in-group: "&4Konnte die Gruppe [groupname] nicht löschen, da sich noch Spieler in der Gruppe befinden!"
+  edit:
+    message-success: "&2Erfolgreich dir Gruppe [groupname] bearbeitet"
+    message-fail: "&4Fehler beim bearbeiten der Gruppe"
+    message-unknown-field: "&eUnbekanntes Feld [fieldname]"
+  sign:
+    message-no-sign: "&4An der Spielerposition befindet sich kein Schild!"
+    message-success: "&2Erfolgreich das Schild hinzugefügt!"
+    message-success-remove: "&2Erfolgreich das Schild entfernt!"
+commands-general:
+  missing-argument: '&4Der Befehl fehlen Argumente!'
+language:
+  success: '&2Erfolgreich die Sprache auf Deutsch geändert!'
+  error: 'Fehler beim ändern der Sprache'
+miscellaneous:
+  player-join: 'Willkommen &f[[prefix]&f] [playername] auf dem Server!'

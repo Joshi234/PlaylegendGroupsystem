@@ -1,0 +1,44 @@
+group-commands:
+  help:
+    message:
+      - '&e&l                        Group Help'
+      - '&e-----------------------------------------------------'
+      - '&e/group help: &fshows this help message'
+      - '&e/group show: &fshows the group you are currently in'
+      - '&e/group create <name> <prefix> <weight> [description]: &fcreates a new group'
+      - '&e/group add <playername> <groupname> [days] [hours] [minutes] [seconds]: &fadds a player to a group, the optional arguments allow for a player to be in a group for a limited time'
+      - '&e/group remove <playername> <groupname>: &f removes a player from a group'
+      - '&e/group sign <add/remove>: &f Shows the playername on the sign of the players position'
+  create:
+    message-success: '&2Group [groupname] successfully created!'
+    message-fail-general: "&4Something went wrong while creating the group!"
+  add:
+    message-success: '&2Succesfully added [playername] to [groupname]!'
+    message-unknown-player: "&4Couldn't find player named [playername]!"
+    message-unknown-group: "&4Couldn't find group named [groupname]!"
+    message-wrong-format: "&4Your timestamp for joinuntil wasn't valid!"
+  remove:
+    message-success: '&2Succesfully removed [playername] from [groupname]!'
+    message-unknown-player: "&4Couldn't find player named [playername]!"
+    message-unknown-group: "&4Couldn't find group named [groupname]!"
+  show:
+    message: "&eYou are currently in the following group: [groupname], with the description: [description]"
+    message-no-group: "&4You are currently in no group!"
+  delete:
+    message-success: "&2Succesfully deleted the group [groupname]!"
+    message-player-in-group: "&4Can't delete the group [groupname] as there are still players in that group!"
+  edit:
+    message-success: "&2Succesfully edit the group [groupname]"
+    message-fail: "&4Something went wrong while editing the group [groupname]"
+    message-unknown-field: "&eUnknown field [fieldname]"
+  sign:
+    message-no-sign: "&4There is no sign at your location!"
+    message-success: "&2Succesfully added group sign!"
+    message-success-remove: "&2Succesfully removed group sign!"
+commands-general:
+  missing-argument: '&4Youre command is missing arguments!'
+language:
+  success: '&2Changed the language successfully to english!'
+  error: 'Error while changing the language'
+miscellaneous:
+  player-join: 'Welcome &f[[prefix]&f] [playername] to the Server!'

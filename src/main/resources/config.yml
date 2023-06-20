@@ -1,0 +1,9 @@
+database:
+  connection-string: 'jdbc:postgresql://localhost:5432/playlegendgroupssystem?currentSchema=group'
+  user: 'user'
+  password: 'password'
+  host: 'localhost'
+  port: 5432,
+  database: 'playlegendgroupssystem'
+  schema: 'group'
+default-group: 'player'

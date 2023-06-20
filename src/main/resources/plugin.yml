@@ -1,0 +1,32 @@
+name: PlaylegendGroupSystem
+version: 1.0.0
+main: org.joshi234.playlegendgroupsystem.GroupSystem
+description: An example plugin
+author: Joshi234
+website: https://papermc.io
+api-version: 1.19
+
+permissions :
+  permission.lang:
+    description: "language"
+    default: true
+    children:
+      permission.node.child: true
+  permission.test:
+    description: "This is a permission node"
+    default: true
+    children:
+      permission.node.child: true
+
+
+commands:
+  language:
+    description: "Set your language"
+    usage: "/language <lang>"
+    permission: permission.lang
+    permission-message: "You do not have permission to use this command"
+  group:
+    description: "This is a test command"
+    usage: "/test <arg>"
+    permission: permission.test
+    permission-message: "You do not have permission to use this command"

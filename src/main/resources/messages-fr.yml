@@ -1,0 +1,44 @@
+group-commands:
+  help:
+    message:
+      - '&e&l                        Group Aide'
+      - '&e-----------------------------------------------------'
+      - '&e/group help: &fmontre cette message'
+      - '&e/group show: &fmontre le groupe que vous fait parti'
+      - '&e/group create <name> <prefix> [description]: &fcréer un nouveux groupe '
+      - '&e/group add <playername> <groupname> <weight>: &fajoute un joueur dans un grouppe'
+      - "&e/group remove <playername> <groupname>: &fsupprime d'un groupe"
+      - '&e/group sign <add/remove>: &f Affiche le nom du joueur dans la panneau qui se trouve dans la position de joueur'
+  create:
+    message-success: '&2Groupe [groupname] créer avec succés!'
+    message-fail-general: "&4Il y a un erreur dans la creation de la groupe!"
+  add:
+    message-success: '&2Ajouter[playername] on [groupname] avec succés!'
+    message-unknown-player: "&4Ne peut pas trouver le joueur [playername]!"
+    message-unknown-group: "&4ne peut pas trouver le groupe [groupname]!"
+    message-wrong-format: "&4L'horodatage de joinuntil n'est pas valide !"
+  remove:
+    message-success: '&2Supprimer [playername] de [groupname] avec succés!'
+    message-unknown-player: "&4Ne peut pas trouver le joueur  [playername]!"
+    message-unknown-group: "&4ne peut pas trouver le groupe [groupname]!"
+  show:
+    message: "&eVous est dans les groupes: [groupname], avec la description: [description]"
+    message-no-group: "&4Vous est pans dans un groupe!"
+  delete:
+    message: "&2Supprimer le groupe [groupname] avec succés!"
+    message-player-in-group: "&4Ne peut pas supprimer le groupe [groupname] parce qu'il y a des personnes dans le groupe!"
+  edit:
+    message-success: "&2Editer le groupe [groupname] avec succés"
+    message-fail: "&4Il y a un erreur d'execution pendant la edition de la groupe [groupname] "
+    message-unknown-field: "&eChamp inconnu [fieldname]"
+  sign:
+    message-no-sign: "&4Il n'y a pas un panneau dans la position de joueur!"
+    message-success: "&2Succès de l'ajout d'un signe de groupe!"
+    message-success-remove: "&2Suppression réussie du signe de groupe!"
+commands-general:
+  missing-argument: '&4Votre command manque des arguments!'
+language:
+  success: '&2Changer la language en français avec succcés!'
+  error: 'Erreur pendant changer la langue'
+miscellaneous:
+  player-join: 'Salut &f[[prefix]&f] [playername] sur le serveur!'
